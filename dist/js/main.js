@@ -1,1 +1,1 @@
-"use strict";console.log("menu "),$(".owl-carousel").owlCarousel({margin:10,nav:!1,items:1,dots:!0});
+"use strict";console.log("menu "),$(".owl-carousel").owlCarousel({margin:0,nav:!1,items:1,dots:!0});

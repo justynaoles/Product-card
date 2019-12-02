@@ -1,0 +1,54 @@
+@import '_mixins';
+@import '_variables';  
+  
+  /**custom**/
+
+  .owl-dots {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+  }
+  .owl-dots span {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+    margin: 0 5px;
+  }
+
+.owl-item {
+
+    display: flex;
+    justify-content: center;;
+}
+
+
+.item {
+  text-align: center;
+  display: flex;
+ 
+
+  @media(min-width: $tablet) {
+      padding: 20px 0;
+  }
+}
+.owl-carousel .owl-item .item img {
+
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+
+
+}
+
+.owl-carousel {
+  
+    @media ( min-width: $desktop) {
+        height: calc(100% - 40px);
+    }
+}
+.owl-stage-outer, .owl-stage, .owl-item, .item {
+  height: 100%;
+}

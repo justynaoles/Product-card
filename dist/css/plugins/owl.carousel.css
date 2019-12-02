@@ -186,26 +186,3 @@
     height: 100%;
     width: 100%; }
   
-
-
-  /**custom**/
-
-  .owl-dots span {
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: black;
-    display: block;
-    margin: 0 5px;
-  }
-
-
-.item {
-  text-align: center;
-}
-.owl-carousel .owl-item .item img {
-
-  display: inline-block;
-  height: 100%;
-  width: auto;
-}
