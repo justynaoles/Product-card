@@ -1,0 +1,34 @@
+@import '_mixins';
+@import '_variables';
+
+.header {
+    height: 80px;
+}
+.nav {
+    padding: 30px 20px;
+}
+
+.ul {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 0 -10px;
+}
+
+.li__return {
+
+    font-size: 1.5rem;
+    position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+}
+
+.li__link {
+
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
