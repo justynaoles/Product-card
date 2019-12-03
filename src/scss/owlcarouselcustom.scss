@@ -26,13 +26,16 @@
 
 .item {
 
-  display: flex;
-  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  padding-bottom: 100%;
  
 
-  @media(min-width: $tablet) {
+  @media(min-width: $desktop) {
       padding: 20px 0;
+
   }
 }
 .owl-carousel .owl-item .item img {
