@@ -40,6 +40,4 @@ fetch(url).then(data=> data.json()).then( data => {
         owlDots[i].style.backgroundColor= colors[i].color;
     }
 
-  
-
 });
