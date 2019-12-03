@@ -31,11 +31,12 @@
 
                 <div class="gallery">
                     <div class="owl-carousel owl-theme">
-                        <div class="item" style="background-image:url('dist/img/green.png')"></div>
+                        <!-- <div class="item" style="background-image:url('dist/img/green.png')"></div>
                         <div class="item" style="background-image:url('dist/img/yellow.png')"></div>
                         <div class="item" style="background-image:url('dist/img/purple.png')"></div>
-                        <div class="item" style="background-image:url('dist/img/grey.png')"></div>
+                        <div class="item" style="background-image:url('dist/img/grey.png')"></div> -->
                     </div>
+                    <div class="gallery__colors">Colors:</div>
                 </div>
                 <div class="info">
                     
@@ -55,7 +56,7 @@
 
                                 <div class="data__price">
                                     <p class="price__title">Price</p>
-                                    <span class="price__value">178.00</span>
+                                    <span class="price__value">&#128;178,00</span>
                                 </div>
         
                                 <div class="data__quantity">
@@ -74,23 +75,28 @@
 
                                 <ul class="description__ul">
                                     <li class="ul__item"><a class="item__link" href="#" data-id="description">Description</a></li>
-                                    <li class="ul__item"><a class="item__link" href="#" data-id="details">Details</a></li>
+                                    <li class="ul__item ul__item_active"><a class="item__link" href="#" data-id="details">Details</a></li>
                                 </ul>
 
-                                <div class="description__content description__content_active" data-id="description">
-                                    <button class="description_button" type="button">Description</button>
+                                <div class="description__content" data-id="description">
+                                    <button class="description_button" type="button">Description<i class="fas fa-chevron-down"></i></button>
                                     <p class="content__text"> Dorum ipsum et qui es dolorem. Sui dot ab concequences lori ui tumm. Ab don mui eo qui Gaius ei Gaia.</p>
                                 </div>
 
-                                <div class="description__content" data-id="details">
-                                        <button class="description_button" type="button">Details</button>
-                                    <p class="content__text"> Lorem ipsum et qui es dolorem. Sui dot ab concequences lori ui tumm. Ab don mui eo qui Gaius ei Gaia.</p>
+                                <div class="description__content description__content_active" data-id="details">
+                                    <button class="description_button" type="button">Details<i class="fas fa-chevron-down description_button--icon"></i></button>
+                                    <ul class="content__text"> 
+                                        <li class="text__item"><i class="fas fa-hammer text__item--icon"></i>Er qui ojo etus rox</li>
+                                        <li class="text__item"><i class="fas fa-hand-holding-usd text__item--icon"></i>Er qui ojo etus rox</li>
+                                        <li class="text__item"><i class="fas fa-truck-pickup text__item--icon"></i>Du oned tui roxem frut de mauro. Atoli ubi? Eques tom dox</li>
+                                    </ul>
+                                    <span class="content__additional">Lotem ipsum et dolorem etus qui es wast ? Dorom dot cotte</span>
                                 </div>
 
                                 <div class="data__summary">
                                     <div class="summary__info">
                                         <p class="summary__title">Total price</p>
-                                        <span class="summary__price">479.50</span>
+                                        <span class="summary__price">&#128;479,50</span>
                                     </div>
 
                                     <button class="summary__button btn"><i class="fas fa-shopping-basket summary__button--icon"></i> <span class="summary__button--text">Add to Cart</span></button>

@@ -17,9 +17,14 @@
     margin: 0 -10px;
 }
 
+.li {
+    color: $light-grey;
+}
+
 .li__return {
 
     font-size: 1.5rem;
+    color: $black;
     position: absolute;
         left: 0;
         top: 50%;

@@ -1,0 +1,22 @@
+[
+    {
+        "img": "dist/img/yellow.png",
+        "alt": "Yellow chair",
+        "color": "#FFF233"
+    },
+    {
+        "img": "dist/img/green.png",
+        "alt": "Green chair",
+        "color": "#23511E"
+    },
+    {
+        "img": "dist/img/purple.png",
+        "alt": "Purple chair",
+        "color": "#A61D5B"
+    },
+    {
+        "img": "dist/img/grey.png",
+        "alt": "Grey chair",
+        "color": "#676365"
+    }
+  ]
