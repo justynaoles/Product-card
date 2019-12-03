@@ -75,7 +75,6 @@ function reload (done) {
 
     watch(config.app.scss, series(css, reload));
     watch(config.app.js, series(scripts, reload));
-    watch(config.app.js, series(scripts, reload));
     watch(config.app.html, reload);
 }
 

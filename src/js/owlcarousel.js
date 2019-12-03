@@ -22,7 +22,7 @@ fetch(url).then(data=> data.json()).then( data => {
 
     });
 
-}).then( data => {
+}).then( () => {
 
     $('.owl-carousel').owlCarousel({
  
@@ -41,3 +41,4 @@ fetch(url).then(data=> data.json()).then( data => {
     }
 
 });
+
