@@ -17,12 +17,6 @@ for (const button of descriptionButton) {
 
         console.log(isActive, parentBtnData);
 
-        //jesli nie ma klasy active:
-        //1. wywalamy klase active kazdemu description__content
-        //2. dajemy klase active parentBtn
-        //3. ul__item wywalamy klase active
-        //4. ul__item dajemy temu active ktory ma data-id === parentBtnData
-
         if(!isActive) {
 
             descriptionsArray.forEach(element=>{
