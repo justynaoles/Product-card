@@ -27,7 +27,7 @@
 }
 
 .info {
-    padding: 0 20px 60px 20px;
+    padding: 0 20px 40px 20px;
     background-color: $light-grey;
 
     @media( min-width:$desktop) {
@@ -112,6 +112,10 @@
         }
     }
 
+}
+
+.description_button--icon {
+    transition: all .5s ease;
 }
 
 .description__content_active {
