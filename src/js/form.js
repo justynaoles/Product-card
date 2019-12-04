@@ -1,5 +1,6 @@
 const form = document.querySelector('.product__form');
 const btnSubmit = document.querySelector('.js--submitForm');
+const btnText = document.querySelector('.summary__button--text');
 
 
 btnSubmit.addEventListener('click',function(e){
@@ -44,7 +45,11 @@ function formValidation( inputValue, min, max){
         }
 
         alert("Dodałeś do koszyka: "+inputValue+finalVer)
-        form.submit();
+        // form.submit();
+
+        btnSubmit.classList.add('summary__button_active');
+        btnText.innerHTML = "Buy item"
+        
     }
 
     else {

@@ -10,6 +10,7 @@
 
 .gallery {
 
+    position: relative;
 
     @media( min-width:$desktop) {
         width: 60%;
@@ -20,10 +21,13 @@
     margin-top: 10px;
     text-transform: uppercase;
     padding-left: 20px;
+    position: absolute;
+        left: 0;
+        bottom: -2px;
 }
 
 .info {
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 60px 20px;
     background-color: $light-grey;
 
     @media( min-width:$desktop) {
@@ -39,7 +43,6 @@
 .data__description {
 
     padding-top: 40px;
-
 }
 
 .description__ul {
@@ -93,10 +96,20 @@
 
     border-top: 1px solid $grey;
 
+    &:nth-of-type(2) {
+
+        border-bottom: 1px solid $grey;
+    }
+
     @media(min-width: $desktop) {
 
         margin-top: 10px;
         border: 0;
+
+        &:nth-of-type(2) {
+
+            border-bottom: 0;
+        }
     }
 
 }
@@ -110,6 +123,12 @@
     .content__text {
 
         display: block;
+    }
+
+    .content__additional {
+
+        display: block;
+        padding: 10px 0
     }
 }
 
@@ -132,12 +151,17 @@
 .content__text {
 
     display: none;
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
 .content__text_active {
 
     display: block;
+}
+
+.content__additional {
+
+    display: none;
 }
 
 .text__item {
@@ -156,7 +180,7 @@
 
     margin-top: 30px;
 
-    @media(min-width: $tablet) {
+    @media(min-width: $desktop) {
 
         display: flex;
         justify-content: space-between;
@@ -183,17 +207,46 @@
 
 .summary__button {
 
+    transition: all .3s ease;
     padding: 15px 30px;
     background-color: $blue;
     color: $white;
     font-size: 1.2rem;
     border-radius: 30px;
+    width: 100%;
   
+    @media (min-width: $desktop) {
+
+        width: auto;
+    }
 
     &:hover {
 
         background-color: $blue-hover;
     }
+}
+
+.summary__button_active {
+
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    background-color: $green;
+    border-radius: 0;
+
+    @media( min-width: $desktop) {
+
+        position: static;
+        width: auto;
+        border-radius: 30px;
+    }
+
+    &:hover {
+
+        background-color: $green;
+    }
+    
 }
 
 .summary__button--text {
