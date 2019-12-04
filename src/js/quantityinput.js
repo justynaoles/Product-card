@@ -3,6 +3,7 @@ const itemsNumber = document.querySelector('.quantity__input--input');
 const btnIncrease = document.querySelector('.js--inputIncrease');
 const btnDecrease = document.querySelector('.js--inputDecrease');
 const maxValue = 5;
+const minValue= 1;
 const startPrice = document.querySelector('.summary__price--value').innerHTML;
 
 
@@ -49,14 +50,21 @@ function increaseNumber(input, max) {
         input.value = increasedValue;
 
     }
+
+    else {
+
+        alertWrongNumber();
+    }
 }
 
-function decreaseNumber(input) {
+function decreaseNumber(input, max, min) {
 
     const currentPrice = Number(document.querySelector('.summary__price--value').innerHTML)
     const inputValue = Number(input.value);
 
-    if(inputValue  > 1) {
+    console.log(inputValue);
+
+    if(inputValue  > min && inputValue <= max) {
 
         const decreasedValue = (inputValue - 1).toString()
         input.value = decreasedValue;
@@ -91,6 +99,12 @@ function decreaseNumber(input) {
         document.querySelector('.summary__price--value').innerHTML =roundedPrice;
     
     }
+
+
+    else {
+
+        alertWrongNumber();
+    }
 }
 
 btnIncrease.addEventListener('click', function(){
@@ -98,6 +112,15 @@ btnIncrease.addEventListener('click', function(){
 })
 
 btnDecrease.addEventListener('click', function(){
-    decreaseNumber(itemsNumber);
+    decreaseNumber(itemsNumber,maxValue,minValue);
 })
+
+
+
+function alertWrongNumber() {
+
+    alert("Minimalna ilość to: "+minValue+", a maksymalna to: "+maxValue+". Użyj proszę liczby z tego zakresu :)")
+
+    itemsNumber.value="1"
+}
 
